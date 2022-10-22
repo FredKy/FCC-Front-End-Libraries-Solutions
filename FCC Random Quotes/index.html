@@ -1,0 +1,78 @@
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+href på rad 37 var twitter.com/intent/tweet
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="styles.css" />
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Title Goes Here</title>
+    <meta name="description" content="Description Goes Here" />
+  </head>
+
+  <body style="background-color: rgb(238, 233, 222)">
+    <div class="container">
+      <div id="quote-box">
+        <div>
+          <blockquote id="text">
+            You can observe a lot just by watching.
+          </blockquote>
+          <div id="author">- Yogi Berra</div>
+        </div>
+        <div class="bottom-row">
+          <div>
+            <a
+              id="tweet-quote"
+              title="Tweet!"
+              href="twitter.com/intent/tweet"
+              style="text-decoration: none"
+            >
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+
+          <div class="center">
+            <button
+              class="btn btn-default target"
+              id="new-quote"
+              onclick="fetchQuote()"
+            >
+              Get a new quote.
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function fetchQuote() {
+        //alert("function was called");
+        fetch("https://type.fit/api/quotes")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            var quote = data[Math.floor(Math.random() * data.length)];
+            console.log(quote);
+            document.getElementById("text").innerHTML = quote.text;
+            quote.author === null
+              ? (document.getElementById("author").innerHTML = "- Unknown")
+              : (document.getElementById("author").innerHTML =
+                  "- " + quote.author);
+          });
+      }
+    </script>
+  </body>
+</html>

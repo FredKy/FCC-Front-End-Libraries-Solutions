@@ -1,0 +1,147 @@
+body {
+  background-color: #94cced;
+}
+
+h1 {
+  font-family: "Share Tech Mono";
+  color: #0a3d62;
+}
+
+.center-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  background-color: #485460;
+  width: 500px;
+  height: 200px;
+}
+
+.display-container {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: #38ada9;
+  height: 160px;
+  width: 340px;
+}
+
+#display {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #1e272e;
+  border-radius: 15px;
+  background-color: #b8e994;
+  height: 200px;
+  width: 260px;
+  margin: 18px;
+}
+
+.mini-display {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #1e272e;
+  border-radius: 15px;
+  background-color: #b8e994;
+  height: 50px;
+  width: 100px;
+  margin: 2px;
+  font-family: "Share Tech Mono";
+  font-size: 40px;
+}
+
+.length-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-buttons {
+  display: flex;
+}
+
+#time-left {
+  font-family: "Share Tech Mono";
+  font-size: 75px;
+  font-weight: 300;
+}
+
+#timer-label {
+  font-family: "Share Tech Mono";
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.length-p {
+  font-family: "Share Tech Mono";
+  font-size: 30px;
+  color: #0a3d62
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 600px;
+  margin: 4rem auto;
+  border: 4px solid #1e272e;
+  border-radius: 120px;
+  background-color: #079992;
+}
+
+.buttons-wrapper {
+  width: 500px;
+  height: 300px;
+  border-radius: 70px;
+  background-color: #38ada9;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lower-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-style:hover,
+.lower-btn-style:hover {
+  background-color: #0e4a75;
+  color: #beeef9;
+  transition: 0.3s;
+}
+
+.btn-style {
+  font-size: 30px;
+  margin: 4px;
+  margin-top: 30px;
+  background-color: #0a3d62;
+  color: #82ccdd;
+  border-radius: 10px;
+}
+
+.lower-btn-style {
+  font-size: 50px;
+  margin: 4px;
+  margin-top: 30px;
+  height: 80px;
+  width: 80px;
+  background-color: #0a3d62;
+  color: #82ccdd;
+  border-radius: 10px;
+}
+
+#reset {
+  font-size: 60px;
+  font-weight: bold;
+}

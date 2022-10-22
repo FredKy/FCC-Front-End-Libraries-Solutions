@@ -1,0 +1,104 @@
+body {
+  background-color: #d2dae2;
+}
+
+.center-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  /* border: 1px solid black; */
+  background-color: #485460;
+  /* display: grid;
+  grid-template-columns: 1fr repeat(2, 60px);
+  width: 62%;
+  padding: 10px; */
+  width: 700px;
+  height: 600px;
+}
+
+/* .right-container {
+  background-color: lightslategray;
+  width: 278px;
+  display: flex;
+  justify-content: center;
+}
+ */
+.btn-style:hover {
+  background-color: #444547;
+  color: rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+
+.btn-style {
+  font-size: 30px;
+  margin: 4px;
+  background-color: #3e3f41;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+.grid-item-1,
+.grid-item-2 {
+  background-color: #640d0d;
+}
+
+.grid-item-1:hover,
+.grid-item-2:hover {
+  background-color: #6b1717;
+}
+
+.grid-item-19 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  /*  grid-column-gap: 20px;
+  grid-row-gap: 20px; */
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+#display {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 2px solid #1e272e;
+  border-radius: 5px;
+  background-color: #7fc5d6;
+  height: 100px;
+  width: 660px;
+  margin: 18px;
+}
+
+#display-text {
+  font-family: "Share Tech Mono";
+  font-size: 50px;
+  font-weight: 300;
+  padding-right: 1ch;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 22ch;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  height: 700px;
+  margin: 10rem auto;
+  border: 4px solid #1e272e;
+  border-radius: 5px;
+  background-color: #33383d;
+}

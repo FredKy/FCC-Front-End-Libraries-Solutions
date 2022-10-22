@@ -1,0 +1,83 @@
+/* .container {
+  background-color: rgb(245, 225, 175);
+  font-family: arial;
+  font-size: 24px;
+  margin: 25px;
+  width: 350px;
+  height: 400px;
+  outline: dashed 1px black;
+  margin: 0 auto;
+} */
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 16px;
+}
+
+.fa-twitter {
+  display: flex;
+  background-color: rgb(231, 208, 149);
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid rgb(231, 183, 60); */
+  padding: 14px;
+  margin-top: 3px;
+  border-radius: 8px;
+  color: black;
+}
+
+#quote-box {
+  background-color: rgb(245, 225, 175);
+  font-family: arial;
+  font-size: 24px;
+  margin: 25px;
+  width: 350px;
+  height: 400px;
+  outline: dashed 1px rgb(231, 183, 60);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+blockquote {
+  font: 21px/33px normal helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-top: 20px;
+}
+blockquote:before {
+  color: rgb(231, 183, 60);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+#author {
+  margin-left: 50px;
+  font-size: 16px;
+}
+#new-quote {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(231, 208, 149);
+  border: none;
+  color: black;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 2px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+#new-quote:hover {
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
+}

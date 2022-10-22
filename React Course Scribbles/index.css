@@ -1,0 +1,16 @@
+#root {
+  font-family: arial;
+  font-size: 24px;
+  margin: 25px;
+  width: 350px;
+  height: 200px;
+  outline: dashed 1px black;
+  /* Center child horizontally*/
+  display: flex;
+  justify-content: center;
+}
+#child {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}

@@ -1,0 +1,76 @@
+body {
+  background-color: #d2dae2;
+}
+
+.center-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  border: 1px solid black;
+  background-color: #485460;
+  /* display: grid;
+  grid-template-columns: 1fr repeat(2, 60px);
+  width: 62%;
+  padding: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+}
+
+.drum-pad {
+  /* padding: 30px; */
+  border: 2px solid #1e272e;
+  background-color: #ffc048;
+  margin: 10px;
+  height: 120px;
+  width: 120px;
+  border-radius: 5px;
+  font-family: "Lato";
+  font-size: 30px;
+  font-weight: 1000;
+  color: #b67b0d;
+}
+
+.right-container {
+  /* background-color: lightslategray; */
+  width: 278px;
+  display: flex;
+  justify-content: center;
+}
+
+#display {
+  display: flex;
+  align-items: center;
+  border: 2px solid #1e272e;
+  border-radius: 5px;
+  background-color: #f53b57;
+  height: 100px;
+  width: 180px;
+  margin: 18px;
+}
+
+#display-text {
+  font-family: "Wire One";
+  font-size: 40px;
+  font-weight: 1000;
+  padding-left: 1ch;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 14ch;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-direction: horizontal;
+  width: 700px;
+  /* height: 280px; */
+  margin: 10rem auto;
+  border: 4px solid #1e272e;
+  border-radius: 5px;
+  background-color: #808e9b;
+}

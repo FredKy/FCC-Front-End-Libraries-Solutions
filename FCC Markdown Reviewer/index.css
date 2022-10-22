@@ -1,0 +1,59 @@
+body {
+  background-color: #cadfeb;
+}
+
+.center-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  margin: 2rem auto;
+  width: 1080px;
+  display: flex;
+  justify-content: center;
+}
+.left-toolbar {
+  font-family: "Roboto";
+  font-weight: bold;
+  background-color: #b5ccce;
+  width: 100%;
+  border: 1px solid #000000;
+  font-size: 2rem;
+  color: #546f70;
+}
+.right-toolbar {
+  font-family: "Roboto";
+  font-weight: bold;
+  background-color: #b5ccce;
+  padding-left: 3px;
+  border: 1px solid #000000;
+  font-size: 2rem;
+  color: #546f70;
+}
+
+.editor-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 2rem auto;
+}
+
+.preview-wrapper {
+  font-family: "Roboto";
+  background-color: #d8eaeb;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 2rem auto;
+}
+
+#editor {
+  background-color: #d8eaeb;
+  min-width: 498px;
+  max-width: 498px;
+  min-height: 200px;
+  height: 400px;
+  font-size: 1rem;
+  border: 0px solid #000000;
+}
